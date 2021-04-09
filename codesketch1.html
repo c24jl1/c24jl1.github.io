@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title></title>
+
+	<style>
+body {
+  background-color: white;
+}
+</style> 
 
 
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	
-	<title>my website</title>
+
 
 	<style type="text/css">
-	
-p{
-	font-family: 'Roboto Mono', monospace;
-	color: lightblue;
-	font-size: 40px;
-}
-
-
-
-	#jaimie {
-		width:350px;
-		height:350px;
-		background-color: white;
-		background-image: url(https://media.giphy.com/media/l41m0CPz6UCnaUmxG/giphy.gif);
-		background-repeat: no-repeat;
-		transition: 2s;
-	}
-
-	#jaimie:hover {
-		transition: 2s;
-		background-color: white;
-		background-image: url(https://media.giphy.com/media/hTCBxllOkGBiFifBAY/giphy.gif);
-		background-repeat: no-repeat;
-		border-radius: 50%;
-}
-</style>
-
+		
+		.freds{
+			width:50px;
+			height:50px;
+			background-size:contain;
+			background-image:url(https://lh3.googleusercontent.com/proxy/MFIaoWLTcmUn1e2qZ6A3VptzzfzPEAvt90-MmnmGOIXoAKEBIgsuar-0eycS0PVw7cM6W9hwTvy-Mzjjja7ui_zYTnOSkFjbvpiJfHd8ATfvOrlTIcjR1lTV2dCTleiJZi3OqSvdVfQvQLwPdTi_2NktyO6VyJH8D_savTRzsxZMBWDW);
+			background-repeat:no-repeat;
+			display:inline-block;
+			position:absolute;
+		}
+	</style>
 </head>
-
 <body>
 
-<p> Here is my website!!</p>	
-<div id=jaimie>
-<body style="background-color: #6495ED">	
 
-</div>
+
+
+<script type="text/javascript">
+	
+	
+
+	document.addEventListener("click", 
+
+		function makeMango (event) {
+			console.log(event);
+		var cat = document.createElement('div');
+		document.body.appendChild(cat);
+		cat.classList.add('freds');
+
+		cat.style.left = event.clientX - 25+'px';
+		cat.style.top = event.clientY - 25 +'px';
+
+	} // end of function i am giving the event listener//
+
+
+		) //end of event listener
+</script>
 
 </body>
 </html>

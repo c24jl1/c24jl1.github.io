@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>beachy day</title>
 
 	<style type="text/css">
-		
-		#person{
-			width: 700px;
+	
+		.cloud{
+			width:200px;
+			height: 200px;
+			background-size: contain;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr-BcOdHehJPYEGwYw2-OC57UjkDJ6XNu3hO5ckPReYgMKczPB2yA1h30BNYNMVzpFfQ&usqp=CAU);
+			background-repeat: no-repeat;
+			position: relative;
+			display: inline-block;
 
+
+			animation-name: moving;
+			animation-duration: 60s;
+			animation-iteration-count: infinite;
 
 		}
 
-	</style>
+		@keyframes moving{
+			0%{
+				transform: rotate(0deg);
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr-BcOdHehJPYEGwYw2-OC57UjkDJ6XNu3hO5ckPReYgMKczPB2yA1h30BNYNMVzpFfQ&usqp=CAU);
+				left: 1px
 
+			}
+			25%{ 
+				transform: rotate(-25deg);
+				background-image: url(https://www.clker.com/cliparts/o/9/6/H/6/x/storm-cloud-md.png);
+				left: 500px;
+			}
+			50%{
+				transform: rotate(0deg);
+			
+				background-image: url(https://www.clker.com/cliparts/o/9/6/H/6/x/storm-cloud-md.png);
+				left: 1000px;
+			}
+
+			75%{
+				transform: rotate(20deg);
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr-BcOdHehJPYEGwYw2-OC57UjkDJ6XNu3hO5ckPReYgMKczPB2yA1h30BNYNMVzpFfQ&usqp=CAU);
+				left: 500px;
+			}
+			100%{
+				transform: rotate(0deg);
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr-BcOdHehJPYEGwYw2-OC57UjkDJ6XNu3hO5ckPReYgMKczPB2yA1h30BNYNMVzpFfQ&usqp=CAU);
+				left: 0px;
+			}
+
+		.parasailer{
+			width: 200px;
+
+		}
+
+		}
+
+
+</style>
 
 </head>
+
+
+
 <body>
 
-	<div id="person">
+	<div class="parasailer" id="parasail1">
 		
 	</div>
-
-	<script type="text/javascript">
+	<div class="parasailer" id="parasail2">
 		
-		function () {
-			
-			
-		}
+	</div>
+	<div class="cloud" id="cloud1">
+		
+	</div>
+	<div class="cloud" id="cloud2">
+		
+	</div>
 	
-
-	</script>
 
 
 </body>
+
+
+
 </html>
