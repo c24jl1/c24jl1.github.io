@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>meet my favorite kpop guys</title>
+
+	<style type="text/css">
+		
+
+
+		#guys{
+			width: 300px;
+			height: 300px;
+			background-color: blue;
+			background-image: url();
+			background-size: contain;
+		}
+
+	</style>
+
+
+<body>
+
+
+	<center>
+		
+			<div id="guys">
+				
+
+			</div>
+
+
+	</center>
+
+	<script type="text/javascript">
+		
+		var colors = ["purple", "green","blue", "red", "violet", "magenta", "black", "orange", "yellow", "lightblue"]
+
+		var images = ["url(https://64.media.tumblr.com/466dd1779dc122777a116d4d2679136c/9ad76c1119b23a99-b2/s640x960/80bbd3348af417bbb01bb9b73e74113506c069e4.jpg)", 
+		"url(https://fsb.zobj.net/crop.php?r=ULvf7_wcTfwiZ7KWlwCHZMOlvPLIC4ZzdtqzIThsSdYDbhS-328umFolPMIQnxuiWTVszma2JrS3Wp1f9kuXT4sy7wk9g7irmFaKDRC0FnS2Q_p_qCyETc91JCPLupq9b9wLJtQDxcsYqOeR)", 
+		
+		"url(https://64.media.tumblr.com/37666323724ac06c95e5fbb694fb6ae4/a30c96feee171e65-79/s640x960/49c266ed9da2dc826f709946411ee1a26b531102.jpg)", 
+		
+		"url(https://data.whicdn.com/images/349341627/original.jpg)", 
+		
+		"url(https://wdef.com/wp-content/uploads/2020/07/0E2BBF3C-C187-433C-BAAA-77268A3B5F51.jpeg)", 
+		
+		"url(https://ih1.redbubble.net/image.1009879601.8271/flat,750x,075,f-pad,750x1000,f8f8f8.jpg)", 
+		
+		"url(https://pbs.twimg.com/media/EilqeXnUYAAwcQ4.jpg)", 
+		
+		"url(https://static.asiachan.com/V.%28Kim.Taehyung%29.full.220561.jpg)"]
+
+		var box = document.getElementById('guys');
+		
+		box.addEventListener("click", function(){console.log()
+				
+			var kpop = Math.round(Math.random()*10);
+			
+
+			console.log(images[kpop])
+
+			box.style.backgroundImage = images[kpop];
+
+
+	})
+
+
+	</script>
+
+</body>
+</html>
