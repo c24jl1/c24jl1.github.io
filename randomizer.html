@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
 	<title>meet my favorite kpop guys</title>
 
 	<style type="text/css">
 		
 
+		.title{
+  			font-family: 'Racing Sans One', cursive;
+  			font-size: 40px;
+  			color: black;
+  			text-align: center;
+		}
 
 		#guys{
-			width: 300px;
-			height: 300px;
-			background-color: blue;
-			background-image: url();
+			width: 500px;
+			height: 500px;
+			background-color: white;
 			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			background-position: center;
+			border-color: black;
+			border-width: 1px;
 		}
 
 	</style>
@@ -23,6 +35,11 @@
 
 	<center>
 		
+			<div class="title">Meet My Favorite Kpop Idols(click below!)</div>
+
+				<br>
+				
+
 			<div id="guys">
 				
 
@@ -42,19 +59,19 @@
 		
 		"url(https://data.whicdn.com/images/349341627/original.jpg)", 
 		
-		"url(https://wdef.com/wp-content/uploads/2020/07/0E2BBF3C-C187-433C-BAAA-77268A3B5F51.jpeg)", 
-		
 		"url(https://ih1.redbubble.net/image.1009879601.8271/flat,750x,075,f-pad,750x1000,f8f8f8.jpg)", 
 		
 		"url(https://pbs.twimg.com/media/EilqeXnUYAAwcQ4.jpg)", 
-		
+
+		"url(https://image.kpopmap.com/2020/11/nct-lucas-freckles-cover.jpg)", 
+
 		"url(https://static.asiachan.com/V.%28Kim.Taehyung%29.full.220561.jpg)"]
 
 		var box = document.getElementById('guys');
 		
 		box.addEventListener("click", function(){console.log()
 				
-			var kpop = Math.round(Math.random()*10);
+			var kpop = Math.round(Math.random()*9);
 			
 
 			console.log(images[kpop])
