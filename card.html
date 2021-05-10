@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+
+	<title></title>
+
+	<style type="text/css">
+		.title{
+  			font-family: 'Racing Sans One', cursive;
+  			font-size: 40px;
+  			color: black;
+  			text-align: center;
+		}
+		
+		
+		#daniel{
+			width:500px;
+			height:500px;
+			background-image:url(https://lh3.googleusercontent.com/proxy/zYIGofxWEvFSSHs4ar-KIZK7QSTiBZYsRQ8M4KTGSkwnAn5SbE0hx_y7RojqXC6hg2Ox3O6NhbWRKZEZLVsZf3_Oi4eocrfe5nc4vKXqOmgkPWD5s6ktr5oes4Vk8RgW7cPts7aMdac);
+			background-position: center;
+		}
+	</style>
+</head>
+<body>
+
+<div class="title">Happy Mother's Day!!❤️</div>
+
+			
+
+<div id="daniel"></div>
+
+
+<script type="text/javascript">
+	
+
+	var box = document.getElementById("daniel");
+
+
+var song = document.getElementById("song");
+
+//add 1 each time you click to something (array or variable)//
+
+var apples =0;
+
+box.addEventListener("click", function(){
+apples = apples + 1;
+console.log(apples)
+
+
+
+if(apples%2 == 1) {
+	box.style.backgroundImage ="url(https://www.rover.com/blog/wp-content/uploads/2020/01/french-bulldog-4278114_1920-960x540.jpg)";
+	song.play();}
+
+else if (apples%2 ==0) {
+	box.style.backgroundImage ="url(https://lh3.googleusercontent.com/proxy/zYIGofxWEvFSSHs4ar-KIZK7QSTiBZYsRQ8M4KTGSkwnAn5SbE0hx_y7RojqXC6hg2Ox3O6NhbWRKZEZLVsZf3_Oi4eocrfe5nc4vKXqOmgkPWD5s6ktr5oes4Vk8RgW7cPts7aMdac)";
+	song.pause();
+}
+})
+
+
+
+
+
+
+</script>
+</body>
+</html>
