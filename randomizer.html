@@ -3,7 +3,7 @@
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
 
-	<title>meet my favorite kpop guys</title>
+	<title>kpop</title>
 
 	<style type="text/css">
 		
@@ -27,6 +27,19 @@
 			border-width: 1px;
 		}
 
+		#description{
+			font-size: 42px;
+			width: 100px;
+			height: 100px;
+			background-color: white;
+			left: 800;
+			right: 800;
+			text-align: center;
+			font-family: 'Racing Sans One', cursive;
+			color: darkblue;
+		
+				}
+
 	</style>
 
 
@@ -45,14 +58,26 @@
 
 			</div>
 
+			<div class="description"></div>
+
+			<div id="pitch" style="background-image: url(url(https://64.media.tumblr.com/466dd1779dc122777a116d4d2679136c/9ad76c1119b23a99-b2/s640x960/80bbd3348af417bbb01bb9b73e74113506c069e4.jpg); background-color: white;"></div>
+		
+
+		<div id="description"></div>
 
 	</center>
 
 	<script type="text/javascript">
-		
-		var colors = ["purple", "green","blue", "red", "violet", "magenta", "black", "orange", "yellow", "lightblue"]
 
-		var images = ["url(https://64.media.tumblr.com/466dd1779dc122777a116d4d2679136c/9ad76c1119b23a99-b2/s640x960/80bbd3348af417bbb01bb9b73e74113506c069e4.jpg)", 
+		
+
+
+
+		
+
+		var names = ["Jungkook:BTS", "Jaebom:GOT7", "Jaehyun:NCT", "Hyunjin:SKZ", "Jaemin:NCT", "Taeyong:NCT", "Lucas:NCT","Taehyung:BTS"]
+
+		var guys = ["url(https://64.media.tumblr.com/466dd1779dc122777a116d4d2679136c/9ad76c1119b23a99-b2/s640x960/80bbd3348af417bbb01bb9b73e74113506c069e4.jpg)", 
 		"url(https://fsb.zobj.net/crop.php?r=ULvf7_wcTfwiZ7KWlwCHZMOlvPLIC4ZzdtqzIThsSdYDbhS-328umFolPMIQnxuiWTVszma2JrS3Wp1f9kuXT4sy7wk9g7irmFaKDRC0FnS2Q_p_qCyETc91JCPLupq9b9wLJtQDxcsYqOeR)", 
 		
 		"url(https://64.media.tumblr.com/37666323724ac06c95e5fbb694fb6ae4/a30c96feee171e65-79/s640x960/49c266ed9da2dc826f709946411ee1a26b531102.jpg)", 
@@ -65,21 +90,39 @@
 
 		"url(https://image.kpopmap.com/2020/11/nct-lucas-freckles-cover.jpg)", 
 
-		"url(https://static.asiachan.com/V.%28Kim.Taehyung%29.full.220561.jpg)"]
-
-		var box = document.getElementById('guys');
+		"url(https://static.asiachan.com/V.%28Kim.Taehyung%29.full.220561.jpg)"
+		]
 		
-		box.addEventListener("click", function(){console.log()
-				
-			var kpop = Math.round(Math.random()*9);
-			
+		var description = document.getElementById('description');
+		
+		var box = document.getElementById('guys');
 
-			console.log(images[kpop])
+		box.addEventListener("click", function(){
 
-			box.style.backgroundImage = images[kpop];
+		var pig = Math.floor(Math.random()*8);
+		
+
+		console.log(names[pig])
+
+		box.style.backgroundImage = guys[pig];
+		description.innerText = names[pig];
+		
 
 
-	})
+		box.style.backgroundColor = "white";
+
+
+		})
+		box.style.backgroundImage = "url(url(https://64.media.tumblr.com/466dd1779dc122777a116d4d2679136c/9ad76c1119b23a99-b2/s640x960/80bbd3348af417bbb01bb9b73e74113506c069e4.jpg)"
+
+
+	
+		
+		
+		
+
+
+		
 
 
 	</script>
